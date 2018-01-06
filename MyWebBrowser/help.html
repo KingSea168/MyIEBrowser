@@ -1,0 +1,434 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<title>帮助</title>
+</head>
+<body lang=ZH-CN style='tab-interval:21.0pt'>
+
+<div class=Section1 style='layout-grid:15.6pt'>
+<h1 align=center style='text-align:center'>KING网络浏览器用户手册</h1>
+
+<p align="center"><img src="icon.jpg"></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='color:red'>类型<span lang=EN-US>: </span></span>桌面应用程序 <span lang=EN-US>/ </span>网络应用程序<span
+lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='color:red'>使用技术<span lang=EN-US>: </span></span><span lang=EN-US>Visual
+C#<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='color:red'>开发工具<span lang=EN-US>: </span></span><span lang=EN-US>Microsoft
+Visual Studio 2005<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'><span style='color:red'>技能点<span
+lang=EN-US>:</span></span><span lang=EN-US> </span>文件流读写操作<span lang=EN-US>,
+XML</span>读取<span lang=EN-US>, </span>文件序列化<span lang=EN-US>, </span>泛型集合<span
+lang=EN-US>, </span>类的继承与多态<span lang=EN-US>, WebBrowser</span>控件应用<span
+lang=EN-US>,<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:45.25pt;text-indent:8.95pt'><b
+style='mso-bidi-font-weight:normal'>值与引用类型的传递<span lang=EN-US>, C#</span>网络应用<span
+lang=EN-US>, </span>其他基本技能点<span lang=EN-US>.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5;tab-stops:240.5pt'><b style='mso-bidi-font-weight:normal'><span
+style='color:red'>小组成员<span lang=EN-US>: </span></span><span lang=EN-US
+style='color:blue'>ST122_</span><span style='color:blue'>周双盛<span lang=EN-US>:</span></span><span
+lang=EN-US> </span>技术实现<span lang=EN-US>, </span>程序调试与解除<span lang=EN-US>Bug<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:24.0pt;mso-para-margin-left:2.0gd;
+text-indent:42.05pt;mso-char-indent-count:3.49'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='color:blue'>ST122_</span><span
+style='color:blue'>周立洋<span lang=EN-US>:</span></span><span lang=EN-US> </span>窗体<span
+lang=EN-US>UI</span>的实现<span lang=EN-US>, </span>部分技术实现<span lang=EN-US>, </span>程序调试<span
+lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'><span lang=EN-US><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='mso-spacerun:yes'>&nbsp; </span><span
+style='mso-spacerun:yes'>&nbsp;</span><span style='color:blue'>ST122_</span></span><span
+style='color:blue'>孟雪<span lang=EN-US>: </span></span>窗体<span lang=EN-US>UI</span>设计与美化<span
+lang=EN-US>, </span>素材提供<span lang=EN-US>, </span>部分技术实现<span lang=EN-US>, </span>程序调试<span
+lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'><span style='color:red'>功能简介<span
+lang=EN-US>:</span></span><span lang=EN-US> </span>以<span lang=EN-US>WebBrowser</span>为主控件<span
+lang=EN-US>, </span>实现本地与网络中的网络文件<span lang=EN-US>(HTML, JSP, ASPX, XML</span>等<span
+lang=EN-US>), </span>图片<span lang=EN-US>, </span>文本文件<span lang=EN-US>, </span>流媒体的浏览功能<span
+lang=EN-US>, </span>支持<span lang=EN-US>file, http, https, ftp</span>协议的访问<span
+lang=EN-US>, </span>以上功能相当于<span lang=EN-US>IE6</span>浏览器浏览效果<span lang=EN-US>.
+</span>支持多标签页浏览<span lang=EN-US>.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'><span style='color:red'>主要功能<span
+lang=EN-US>: <o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'><span lang=EN-US><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>利用硬盘序列号进行软件注册<span
+lang=EN-US>, </span>提供试用期<span lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:15.75pt'><b
+style='mso-bidi-font-weight:normal'>&nbsp;快捷键<span lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:15.75pt'><b
+style='mso-bidi-font-weight:normal'>&nbsp;页面缩放<span lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'><span lang=EN-US><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>新闻订阅<span
+lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'><span lang=EN-US><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>邮件收发<span
+lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'><span lang=EN-US><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>多标签页浏览<span
+lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:15.75pt'><b
+style='mso-bidi-font-weight:normal'>&nbsp;输入网址智能提示<span lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'><span lang=EN-US><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>打开本地文件<span
+lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'><span lang=EN-US><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>保存当前网页或文件为<span
+lang=EN-US>HTML</span>或其他自定义格式<span lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'><span lang=EN-US><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>打印当前网页或文件<span
+lang=EN-US>, </span>支持打印预览与打印设置<span lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'><span lang=EN-US><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>查看当前网页或文件的属性<span
+lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'><span lang=EN-US><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>当前网页的图片下载<span
+lang=EN-US>, </span>文本复制<span lang=EN-US>, </span>粘贴<span lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'><span lang=EN-US><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>直接使用<span
+lang=EN-US>Google</span>搜索<span lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'><span lang=EN-US><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>保存浏览历史记录<span
+lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'><span lang=EN-US><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>自定义书签<span
+lang=EN-US>(</span>添加<span lang=EN-US>, </span>删除<span lang=EN-US>, </span>修改<span
+lang=EN-US>, </span>保存<span lang=EN-US>)<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'><span lang=EN-US><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>自定义启动页面<span
+lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'><span lang=EN-US><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>自定义主页与搜索页<span
+lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'><span lang=EN-US><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>自定义显示窗体<span
+lang=EN-US>UI<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'><span lang=EN-US><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>删除历史记录与输入历史<span
+lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'><span lang=EN-US><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:99.4pt;text-indent:-99.4pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'><span style='font-size:22.0pt;
+color:red'>使用手册<span lang=EN-US>:<o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal style='margin-left:99.4pt;text-indent:-99.4pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:
+22.0pt;color:red'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:14.0pt;color:red'>快捷键<span lang=EN-US>:<o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Alt + F1: 打开帮助文档<p>
+Alt+F11: 打开/关闭全屏显示<P>
+Ctrl+左: 上一页<p>
+Ctrl+右: 下一页<span
+lang=EN-US>.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:14.0pt;color:red'>新标签页<span lang=EN-US>:<o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>可以创建一个新的空白标签页<span
+lang=EN-US>.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:63.25pt;text-indent:-63.25pt;mso-char-indent-count:
+-4.5'><b><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;color:red'>输入网址<span
+lang=EN-US>:<o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>当有输入记录时<span
+lang=EN-US>, </span>如果有你输入的字符完全匹配的记录地<span lang=EN-US>, </span>系统会自动补全网址<span
+lang=EN-US>, </span>实现快速浏览<span lang=EN-US>, </span>点击跳转后<span lang=EN-US>, </span>会跳转到相应的页面<span
+lang=EN-US>.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+12.0pt;color:red'>Google</span></b><b><span style='font-size:14.0pt;mso-bidi-font-size:
+12.0pt;color:red'>搜索<span lang=EN-US>:<o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>在搜索栏中输入搜索内容后<span
+lang=EN-US>, </span>点击搜索按钮<span lang=EN-US>, </span>即可显示谷歌搜索引擎的搜索内容<span
+lang=EN-US>.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;
+color:red'>关闭当前标签页<span lang=EN-US>:<o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>点击关闭当前标签页按钮后<span
+lang=EN-US>, </span>会关闭当前选中的页面<span lang=EN-US>.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;
+color:red'>关闭全部标签页<span lang=EN-US>:<o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>点击关闭全部标签页按钮后<span
+lang=EN-US>, </span>全关闭全部的打开页面<span lang=EN-US>.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;
+color:red'>网页浏览<span lang=EN-US>:<o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>当输入网址或通过其他方式打开一个页面后<span
+lang=EN-US>, </span>在页面加载时<span lang=EN-US>, </span>状态条中的进度条会提示当前的载入进程<span
+lang=EN-US>, </span>当载入完毕后<span lang=EN-US>, </span>会在主窗体中显示该页面的内容<span
+lang=EN-US>, </span>此时您可以对页面进行预览<span lang=EN-US>,</span>图片的下载<span lang=EN-US>,
+</span>文本的复制<span lang=EN-US>,<span style='mso-spacerun:yes'>&nbsp; </span></span>源文件的查看或者打印等操作<span
+lang=EN-US>.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:63.25pt;text-indent:-63.25pt;mso-char-indent-count:
+-4.5'><b><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;color:red'>打开本地文件<span
+lang=EN-US>:<o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'>文件 <span lang=EN-US>– </span>打开 <span
+lang=EN-US>– </span>选择文件 <span lang=EN-US>– </span>确定 <span lang=EN-US>– </span>可以能过畅游网络浏览器浏览你喜欢的文件了<span
+lang=EN-US>.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:63.25pt;text-indent:-63.25pt;mso-char-indent-count:
+-4.5'><b><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;color:red'>保存网页<span
+lang=EN-US>:<o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'>已经打开一个网页 <span lang=EN-US>– </span>文件
+<span lang=EN-US>– </span>保存网页 <span lang=EN-US>– </span>选择保存路径与文件名 <span
+lang=EN-US>– </span>确定 <span lang=EN-US>– </span>保存成功了<span lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:63.25pt;text-indent:-63.25pt;mso-char-indent-count:
+-4.5'><b><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;color:red'>打印文件内容<span
+lang=EN-US>:<o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'>已经打开一个网页或其他文件 <span lang=EN-US>– </span>文件
+<span lang=EN-US>– </span>打印 <span lang=EN-US>– </span>打印 <span lang=EN-US>– </span>选择打印机
+<span lang=EN-US>– </span>打印成功<span lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'>也可以先预览打印效果与设置打印机<span lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:63.25pt;text-indent:-63.25pt;mso-char-indent-count:
+-4.5'><b><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;color:red'>查看文件属性<span
+lang=EN-US>:<o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'>已经打开一个网页或其他文件 <span lang=EN-US>– </span>文件
+<span lang=EN-US>– </span>属性 <span lang=EN-US>– </span>可以查看当前文件的属性了<span
+lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:63.25pt;text-indent:-63.25pt;mso-char-indent-count:
+-4.5'><b><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;color:red'>自定义窗体<span
+lang=EN-US>UI:<o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'>查看 <span lang=EN-US>– </span>视窗 <span
+lang=EN-US>– </span>选择要显示或隐藏的控件后<span lang=EN-US>, </span>即可实现效果<span
+lang=EN-US>, </span>或者在工具栏或菜单栏上单击鼠标右键<span lang=EN-US>, </span>也可以在工具 <span
+lang=EN-US>– </span>首选项 <span lang=EN-US>– </span>窗体显示中<span lang=EN-US>, </span>保存你的自定义效果<span
+lang=EN-US>.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'>前进<span lang=EN-US>, </span>后退<span
+lang=EN-US>, </span>停止<span lang=EN-US>, </span>刷新<span lang=EN-US>, </span>第一页<span
+lang=EN-US>, </span>最后一页<span lang=EN-US>:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'>在浏览网页的同时<span lang=EN-US>, </span>系统会自动判断当前页是否有前进<span
+lang=EN-US>(</span>最后一页<span lang=EN-US>)</span>或后退<span lang=EN-US>(</span>第一页<span
+lang=EN-US>), </span>在当前页加载时<span lang=EN-US>, </span>点击停止会停止加载<span
+lang=EN-US>, </span>在当前页上点击刷新可以重新加载当前网页<span lang=EN-US>.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'>以上功能也可以通过菜单栏 <span lang=EN-US>– </span>查看
+或者 在网页中右键<span lang=EN-US>, </span>完成操作<span lang=EN-US>.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:63.25pt;text-indent:-63.25pt;mso-char-indent-count:
+-4.5'><b><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;color:red'>主页<span
+lang=EN-US>:<o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'>当点击主页按钮时<span lang=EN-US>, </span>页面会跳转到主页中<span
+lang=EN-US>, </span>主页可以通过首选项自定义<span lang=EN-US>.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:63.25pt;text-indent:-63.25pt;mso-char-indent-count:
+-4.5'><b><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;color:red'>搜索页<span
+lang=EN-US>:<o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'>当点击 查看 <span lang=EN-US>– </span>搜索项后<span
+lang=EN-US>, </span>页面跳转到搜索页中<span lang=EN-US>, </span>搜索页可以通过首选项自定义<span
+lang=EN-US>.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:63.25pt;text-indent:-63.25pt;mso-char-indent-count:
+-4.5'><b><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;color:red'>查看源文件<span
+lang=EN-US>:<o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'>已经打开一个网页文件<span lang=EN-US>(HTML,
+JSP, XML, ASPX</span>格式<span lang=EN-US>) – </span>查看 <span lang=EN-US>– </span>查看源文件
+<span lang=EN-US>– </span>打开查看源文件窗体<span lang=EN-US>.<span
+style='mso-spacerun:yes'>&nbsp; </span></span>在源文件窗体中可以通过点击保存按钮<span
+lang=EN-US>, </span>实现源文件的保存<span lang=EN-US>.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:63.25pt;text-indent:-63.25pt;mso-char-indent-count:
+-4.5'><b><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;color:red'>全屏<span
+lang=EN-US>:<o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'>查看 <span lang=EN-US>– </span>全屏 <span
+lang=EN-US>– </span>页面会全屏浏览<span lang=EN-US>, </span>点击退出全屏按钮会退出全屏浏览状态<span
+lang=EN-US>.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:63.25pt;text-indent:-63.25pt;mso-char-indent-count:
+-4.5'><b><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;color:red'>历史<span
+lang=EN-US>(</span>只限保存<span lang=EN-US>10</span>条历史记录<span lang=EN-US>):<o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.2pt;text-indent:-54.2pt;mso-char-indent-count:
+-4.5'><b style='mso-bidi-font-weight:normal'>当浏览了一个网页或文件后<span lang=EN-US>, </span>系统会自动记录最近浏览的<span
+lang=EN-US>10</span>条历史记录<span lang=EN-US>, </span>可以通过 历史 <span lang=EN-US>– </span>选择相应的历史记录<span
+lang=EN-US>, </span>再次打开浏览过的页面<span lang=EN-US>. </span>当退出程序后<span lang=EN-US>,
+</span>程序会继续保留历史记录<span lang=EN-US>, </span>再次打开程序<span lang=EN-US>, </span>依然会存在历史记录<span
+lang=EN-US>. </span>历史记录可以通过首选项 <span lang=EN-US>– </span>删除记录清除<span
+lang=EN-US>.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;
+color:red'>书签<span lang=EN-US>(</span>只限自定义<span lang=EN-US>10</span>条书签<span
+lang=EN-US>):<o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>书签 <span lang=EN-US>–
+</span>添加书签 <span lang=EN-US>– </span>可以快速添加一条书签<span lang=EN-US>, </span>通过书签管理可以添加<span
+lang=EN-US>, </span>删除<span lang=EN-US>, </span>修改书签内容<span lang=EN-US>, <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>当程序退出后<span
+lang=EN-US>, </span>程序会继续保留书签内容<span lang=EN-US>, </span>再次打开程序<span
+lang=EN-US>, </span>自定义的书签依然会存在<span lang=EN-US>.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;
+color:red'>新闻订阅<span lang=EN-US>:<o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>工具 <span lang=EN-US>–
+</span>新闻订阅 <span lang=EN-US>– </span>窗体左侧会出现一个新闻阅读窗体<span lang=EN-US>, </span>可以通过点击工具栏第一个按钮实现新闻阅读窗体的显示与隐藏<span
+lang=EN-US>, </span>点击添加频道<span lang=EN-US>, </span>输入地址与标题后<span lang=EN-US>, </span>会自动下载相应的新闻内容并显示<span
+lang=EN-US>, </span>点击新闻标题后<span lang=EN-US>, </span>就可以通过浏览窗口查看最新的新闻内容了<span
+lang=EN-US>. </span>也可以对新闻频道进行修改<span lang=EN-US>, </span>删除<span lang=EN-US>, </span>更新等操作<span
+lang=EN-US>. </span>点击关闭后<span lang=EN-US>, </span>系统会自动保存您订阅的新闻内容<span
+lang=EN-US>, </span>下次打开程序<span lang=EN-US>, </span>依然可以继续浏览<span lang=EN-US>.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;
+color:red'>邮件收发<span lang=EN-US>:<o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>工具 <span lang=EN-US>–
+</span>邮件收发 <span lang=EN-US>– </span>打开邮件收发窗体 <span lang=EN-US>– </span>邮件设置 <span
+lang=EN-US>– </span>输入您的邮件地址与邮箱配置后 <span lang=EN-US>– </span>点击获取邮件 <span
+lang=EN-US>– </span>即可查看您的邮箱内容<span lang=EN-US>, </span>点击发送邮件<span lang=EN-US>,
+</span>即可用该邮件地址与用户名发送一封邮件了<span lang=EN-US>. </span>点击后台运行<span lang=EN-US>, </span>窗体进程不会被终止<span
+lang=EN-US>, </span>会在任务栏中显示一个任务图标<span lang=EN-US>, </span>点击任务图标<span
+lang=EN-US>, </span>会再次显示邮件窗体<span lang=EN-US>. </span>邮件配置可以保存<span
+lang=EN-US>.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;
+color:red'>首选项<span lang=EN-US>:<o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>工具 <span lang=EN-US>–
+</span>首选项 <span lang=EN-US>– </span>启动页<span lang=EN-US>, </span>可以设置打开程序时<span
+lang=EN-US>, </span>自动加载的网页<span lang=EN-US>, </span>有空标签页<span lang=EN-US>, </span>主页<span
+lang=EN-US>, </span>自定义标签页可选择<span lang=EN-US>. </span>主页 <span lang=EN-US>– </span>参见主页<span
+lang=EN-US>, </span>搜索页 <span lang=EN-US>– </span>参见搜索面<span lang=EN-US>. </span>窗体显示
+<span lang=EN-US>– </span>参见视图<span lang=EN-US>. </span>删除记录 <span lang=EN-US>–
+</span>参见历史<span lang=EN-US>. </span>恢复缺省设置 <span lang=EN-US>– </span>可以一键还原为系统最初的设置<span
+lang=EN-US>. </span>当设置完成后<span lang=EN-US>, </span>程序会自动保存配置信息<span
+lang=EN-US>, </span>再次打开程序后<span lang=EN-US>, </span>配置内容即可生效<span lang=EN-US>.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;
+color:red'>程序更新<span lang=EN-US>(</span>未完成实现<span lang=EN-US>):<o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>帮助 <span lang=EN-US>–
+</span>程序更新<span lang=EN-US> - </span>可以查看当前的文件版本号与更新日期<span lang=EN-US>, </span>未能完成更新功能<span
+lang=EN-US>.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;
+color:red'>检查连接<span lang=EN-US>:<o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>帮助 <span lang=EN-US>–
+</span>检查连接 <span lang=EN-US>– </span>可以快速检查当前网络是否连接<span lang=EN-US>.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;
+color:red'>关于<span lang=EN-US>:<o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>帮助 <span lang=EN-US>–
+</span>关于 <span lang=EN-US>– </span>关于KING网络浏览器<span lang=EN-US>.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US><span
+style='mso-tab-count:15'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='mso-spacerun:yes'>&nbsp; </span><span style='mso-tab-count:9'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;color:blue'>KING个人工作室<span
+lang=EN-US> <o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal style='margin-left:396.0pt;text-indent:21.0pt'><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:15.0pt;
+color:blue'>By </span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;color:blue'>KINGUPSoftware<span lang=EN-US> 研发</span>部</span><span
+lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:384.0pt;mso-para-margin-left:32.0gd;
+text-indent:14.9pt;mso-char-indent-count:.99'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='font-size:15.0pt;color:blue'><span
+style='mso-tab-count:5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='mso-tab-count:1'>&nbsp; </span><st1:chsdate Year="2009" Month="12"
+Day="16" IsLunarDate="False" IsROCDate="False" w:st="on">2016-10-09</st1:chsdate><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
